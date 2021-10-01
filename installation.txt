@@ -1,0 +1,11 @@
+# install virt-manager
+# in my case i use arch
+
+yay virt-manager
+
+# enable and start libvirt
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+
+# install virt-bootstrap
+yay virt-bootstrap
