@@ -3,6 +3,9 @@
 
 sudo pacman -S qemu virt-manager dnsmasq dmidecode vde2 etables dnsmasq
 
+# start network default for virt-manager
+sudo virsh net-start default
+
 # enable and start libvirt
 sudo systemctl enable libvirtd.service
 sudo systemctl start libvirtd.service
